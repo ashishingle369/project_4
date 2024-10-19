@@ -1,61 +1,76 @@
-body {
-    font-family: Arial, sans-serif;
+/* Basic reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
-header {
-    background: #28a745;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-main {
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    min-height: 100vh;
 }
 
-.registration-form {
-    background: white;
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.registration-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.registration-form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.registration-form button {
-    background-color: #28a745;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.registration-form button:hover {
-    background-color: #218838;
-}
-
-footer {
+/* Header styling */
+header {
     text-align: center;
-    padding: 10px 0;
-    background-color: #28a745;
-    color: white;
+    margin-bottom: 20px;
 }
 
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+/* Form container */
+.registration-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input fields */
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Button styling */
+button {
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
